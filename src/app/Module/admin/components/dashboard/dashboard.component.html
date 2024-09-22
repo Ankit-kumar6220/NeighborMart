@@ -1,0 +1,24 @@
+<div class="bg-[#161616] p-4">
+  <div class="grid grid-cols-12 gap-5">
+    <div class="col-span-6">
+      <div class="bg-[#0a0a0a]">
+        <h1 class="p-3 text-gray-500">
+          {{ "Recently Added Products" | uppercase }}
+        </h1>
+        <app-product-table [dataSource]="recentProducts" [isDashboard]="true" />
+      </div>
+    </div>
+    <div class="col-span-6">
+      <div class="bg-[#0a0a0a]">
+        <h1 class="p-3 text-gray-500">{{ "new customers" | uppercase }}</h1>
+        <app-customer-table [customers]="customers" />
+      </div>
+    </div>
+    <div class="col-span-12">
+      <div class="bg-[#0a0a0a]">
+        <h1 class="p-3 text-gray-500">{{ "Recent Orders" | uppercase }}</h1>
+        <app-orders-table [order]="recentOrders" />
+      </div>
+    </div>
+  </div>
+</div>

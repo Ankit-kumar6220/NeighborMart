@@ -1,0 +1,38 @@
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  .dark-theme input,
+  .dark-theme textarea {
+    background-color: #272727;
+    color: #ffffff;
+  }
+  
+  .dark-theme input::placeholder,
+  .dark-theme textarea::placeholder {
+    color: #a0a0a0;
+  }
+  
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer and Edge */
+  }
+  
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+  }
+  /* Apply custom styling to remove the vertical line on focus */
+.mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
+  outline-offset: 0; /* This value may need to be adjusted based on your design */
+  border-color: transparent; /* Set the border color to transparent to hide the line */
+  box-shadow: none; /* Remove the box shadow on focus */
+}
+
+.removeOutline{
+  outline-offset: 0; /* This value may need to be adjusted based on your design */
+  border-color: transparent; /* Set the border color to transparent to hide the line */
+  box-shadow: none; /* Remove the box shadow on focus */
+}
+
+  

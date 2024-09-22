@@ -1,0 +1,14 @@
+
+
+<!-- <div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div> -->
+  
+<ng-container *ngIf="isLoggedIn; else registerComponent">
+    <app-login [changeTemplate]="changeTemplate"/>
+  </ng-container>
+  
+  <ng-template #registerComponent>
+    <app-register [changeTemplate]="changeTemplate" />
+  </ng-template>
+  

@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+
+
+.container {
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+}
+
+
+
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #FFF;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  cursor: default;
+  outline: none;
+}
+
+form {
+  position: relative; /* Add position relative to the form */
+  border-radius: 0.4em;
+  width: 400px;
+  background: #000000b0;
+}
+
+form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url("https://cdn.pixabay.com/photo/2014/06/24/17/38/smoke-376543_1280.jpg");
+  opacity: 0.4; /* Adjust the opacity for the background image */
+  z-index: -1;
+}
+
+
+
+
+
+.inset {
+  padding: 20px;
+}
+
+form h1 {
+  font-family: 'Audiowide';
+  border-bottom: 1px solid #282828;
+  font-size: 18px;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #000;
+}
+
+form h1 {
+  color: #69f0ae;
+  font-family: Audiowide;
+  font-weight: normal;
+}
+
+form h1.poweron {
+  color: #ffffff;
+  transition: all 0.5s;
+  animation: flicker 1s ease-in-out 1 alternate, neon 1.5s ease-in-out infinite alternate;
+  animation-delay: 0s, 1s;
+}
+
+
+

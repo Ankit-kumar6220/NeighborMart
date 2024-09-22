@@ -1,0 +1,75 @@
+<!-- <div class="background-wrap">
+  <div class="background"></div>
+</div> -->
+<div class="container">
+<form
+  id="accesspanel"
+  [formGroup]="loginForm"
+  (ngSubmit)="submitForm()"
+ 
+>
+  <h1 id="litheader">Shop with Zosh</h1>
+  <div class="inset">
+    
+
+ 
+
+    <mat-form-field class="w-full">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required email />
+      <mat-error
+        *ngIf="loginForm.controls['email'].hasError('required')"
+      >
+        Email is required
+      </mat-error>
+      <mat-error *ngIf="loginForm.controls['email'].hasError('email')">
+          Please enter a valid email address
+        </mat-error>
+    </mat-form-field>
+
+    <mat-form-field class="w-full">
+      <mat-label>Password</mat-label>
+      <input
+        matInput
+        formControlName="password"
+        type="password"
+        required
+        minlength="8"
+      />
+      <mat-error
+        *ngIf="loginForm.controls['password'].hasError('required')"
+      >
+        Password is required
+      </mat-error>
+      <mat-error *ngIf="loginForm.controls['password'].hasError('minlength')">
+          Password should be at least 8 characters long
+        </mat-error>
+    </mat-form-field>
+
+    <div class="">
+        <button
+          class="w-full border"
+          style="padding: 1.7rem"
+          type=""
+          mat-raised-button
+          color="accent"
+        >
+          LOGIN
+        </button>
+      </div>
+
+      <div class="flex items-center space-x-3 justify-center my-10">
+        <span>if you don't have account ?</span>
+        <button
+          class=""
+          mat-button
+          color="accent"
+          (click)="changeTemplate()"
+        >
+          REGISTER
+        </button>
+      </div>
+  </div>
+</form>
+</div>
+
